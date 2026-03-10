@@ -1,0 +1,11 @@
+D:\LapTrinhWindows\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.exe.config
+D:\LapTrinhWindows\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.exe
+D:\LapTrinhWindows\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.pdb
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.AssemblyReference.cache
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.Form1.resources
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.Properties.Resources.resources
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.ucQUanLyQuaHan.resources
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.GenerateResource.cache
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.CoreCompileInputs.cache
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.exe
+D:\LapTrinhWindows\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.pdb
