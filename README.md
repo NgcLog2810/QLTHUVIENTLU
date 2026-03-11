@@ -1,4 +1,5 @@
-# 📚 Hướng dẫn làm việc với Project (GitHub)
+# 📖 QLTHUVIENTLU
+Project quản lý thư viện - môn Lập trình Windows
 
 ## 1. Clone project về máy
 
