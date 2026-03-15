@@ -60,6 +60,12 @@
     <Compile Include="ucQUanLyQuaHan.Designer.cs">
       <DependentUpon>ucQUanLyQuaHan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTrangChuTT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTrangChuTT.Designer.cs">
+      <DependentUpon>ucTrangChuTT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="ucQUanLyQuaHan.resx">
       <DependentUpon>ucQUanLyQuaHan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTrangChuTT.resx">
+      <DependentUpon>ucTrangChuTT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
