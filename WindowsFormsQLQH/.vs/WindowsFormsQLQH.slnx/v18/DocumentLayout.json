@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\",
+  "WorkspaceRootPath": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|d:\\laptrinhwindows\\baitaplon\\windowsformsqlqh\\uctrangchutt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|solutionrelative:uctrangchutt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|d:\\laptrinhwindows\\baitaplon\\windowsformsqlqh\\ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|solutionrelative:ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|d:\\laptrinhwindows\\new folder (2)\\windowsformsqlqh\\uctrangchutt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\uctrangchutt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|solutionrelative:uctrangchutt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|d:\\laptrinhwindows\\new folder (2)\\windowsformsqlqh\\ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|solutionrelative:ucquanlyquahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B7D448AE-5158-41A0-A178-64AF57CB5533}|WindowsFormsQLQH.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,42 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucQUanLyQuaHan.cs",
-              "DocumentMoniker": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
-              "RelativeDocumentMoniker": "ucQUanLyQuaHan.cs",
-              "ToolTip": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
-              "RelativeToolTip": "ucQUanLyQuaHan.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAgwOwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T15:44:42.296Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ucQUanLyQuaHan.cs [Design]",
-              "DocumentMoniker": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
-              "RelativeDocumentMoniker": "ucQUanLyQuaHan.cs",
-              "ToolTip": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs [Design]",
-              "RelativeToolTip": "ucQUanLyQuaHan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T03:08:46.587Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\Form1.cs",
+              "DocumentMoniker": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\Form1.cs [Design]",
+              "ToolTip": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T03:06:16.306Z",
@@ -70,16 +47,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "ucQUanLyQuaHan.cs [Design]",
+              "DocumentMoniker": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
+              "RelativeDocumentMoniker": "ucQUanLyQuaHan.cs",
+              "ToolTip": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs [Design]",
+              "RelativeToolTip": "ucQUanLyQuaHan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T03:08:46.587Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ucTrangChuTT.cs [Design]",
-              "DocumentMoniker": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucTrangChuTT.cs",
+              "DocumentMoniker": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucTrangChuTT.cs",
               "RelativeDocumentMoniker": "ucTrangChuTT.cs",
-              "ToolTip": "D:\\LapTrinhWindows\\New folder (2)\\WindowsFormsQLQH\\ucTrangChuTT.cs [Design]",
+              "ToolTip": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucTrangChuTT.cs [Design]",
               "RelativeToolTip": "ucTrangChuTT.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T15:55:30.176Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucQUanLyQuaHan.cs",
+              "DocumentMoniker": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
+              "RelativeDocumentMoniker": "ucQUanLyQuaHan.cs",
+              "ToolTip": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucQUanLyQuaHan.cs",
+              "RelativeToolTip": "ucQUanLyQuaHan.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAcwPMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T15:44:42.296Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ucTrangChuTT.cs",
+              "DocumentMoniker": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucTrangChuTT.cs",
+              "RelativeDocumentMoniker": "ucTrangChuTT.cs",
+              "ToolTip": "D:\\LapTrinhWindows\\baiTapLon\\WindowsFormsQLQH\\ucTrangChuTT.cs",
+              "RelativeToolTip": "ucTrangChuTT.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAADYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T02:20:37.447Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }

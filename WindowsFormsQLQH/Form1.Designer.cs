@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ucQUanLyQuaHan1 = new WindowsFormsQLQH.ucQUanLyQuaHan();
+            this.ucTrangChuTT1 = new WindowsFormsQLQH.ucTrangChuTT();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 944);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1478, 944);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -62,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 938);
+            this.panel1.Size = new System.Drawing.Size(242, 938);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -84,7 +84,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(183, 938);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(242, 938);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -105,26 +105,26 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.ucQUanLyQuaHan1);
+            this.panel2.Controls.Add(this.ucTrangChuTT1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(192, 3);
+            this.panel2.Location = new System.Drawing.Point(251, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(927, 938);
+            this.panel2.Size = new System.Drawing.Size(1224, 938);
             this.panel2.TabIndex = 1;
             // 
-            // ucQUanLyQuaHan1
+            // ucTrangChuTT1
             // 
-            this.ucQUanLyQuaHan1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucQUanLyQuaHan1.Location = new System.Drawing.Point(0, 0);
-            this.ucQUanLyQuaHan1.Name = "ucQUanLyQuaHan1";
-            this.ucQUanLyQuaHan1.Size = new System.Drawing.Size(927, 938);
-            this.ucQUanLyQuaHan1.TabIndex = 0;
+            this.ucTrangChuTT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucTrangChuTT1.Location = new System.Drawing.Point(0, 0);
+            this.ucTrangChuTT1.Name = "ucTrangChuTT1";
+            this.ucTrangChuTT1.Size = new System.Drawing.Size(1224, 938);
+            this.ucTrangChuTT1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 944);
+            this.ClientSize = new System.Drawing.Size(1478, 944);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -146,7 +146,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private ucQUanLyQuaHan ucQUanLyQuaHan1;
+        private ucTrangChuTT ucTrangChuTT1;
     }
 }
 

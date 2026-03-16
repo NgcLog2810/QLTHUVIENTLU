@@ -107,5 +107,20 @@
   <ItemGroup>
     <None Include="Resources\open-book_10799071.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book-outline-variant-inside-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-03-16 175510.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-03-16 175503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-03-16 175520.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-03-16 175605.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,3 +21,15 @@ D:\LapTrinhWindows\New folder (2)\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.cs
 D:\LapTrinhWindows\New folder (2)\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.exe
 D:\LapTrinhWindows\New folder (2)\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.pdb
 D:\LapTrinhWindows\New folder (2)\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.ucTrangChuTT.resources
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.exe.config
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.exe
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\bin\Debug\WindowsFormsQLQH.pdb
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.AssemblyReference.cache
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.Form1.resources
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.Properties.Resources.resources
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.ucQUanLyQuaHan.resources
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.ucTrangChuTT.resources
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.GenerateResource.cache
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.csproj.CoreCompileInputs.cache
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.exe
+D:\LapTrinhWindows\baiTapLon\WindowsFormsQLQH\obj\Debug\WindowsFormsQLQH.pdb

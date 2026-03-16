@@ -21,31 +21,35 @@ namespace WindowsFormsQLQH
             InitializeComponent();
         }
         string chuoiKetNoi = "Data Source =DESKTOP-65MR51H\\SQLEXPRESS;" +
-                "Initial Catalog=heThongThuVienTLU;" +
+                "Initial Catalog=QLTV;" +
                 "Integrated Security=True";
         SqlConnection conn = null;
 
         private void LoadData()
         {
             string sql = "Select\n" +
-                    "row_number() over (order by hanTra desc) as STT," +
-                    "maPhieuMuon as N'Mã phiếu mượn',\n" +
-                    "maDocGia as N'Mã độc giả',\n" +
-                    "tenDocGia as N'Tên độc giả',\n" +
+                    "maPhieu as N'Mã phiếu',\n" +
+                    "maNguoiDung as N'Mã độc giả',\n" +
+                    "tenNguoiDung as N'Tên độc giả',\n" +
                     "maSach as N'Mã sách',\n" +
                     "tenSach as N'Tên sách',\n" +
                     "ngayMuon as N'Ngày mượn',\n" +
-                    "hanTra as N'Hạn trả',\n" +
-                    "datediff(day, hanTra, getdate()) as N'Số ngày quá hạn',\n" +
-                    "datediff(day, hanTra, getdate()) *400 as N'Tiền phạt',\n" +
+                    "ngayHenTra as N'Hạn trả',\n" +
+                    "ngayTraThucTe as N'Ngày trả thực tế',\n"+
+                    "datediff(day, ngayHenTra, getdate()) as N'Số ngày quá hạn',\n" +
+                    "datediff(day, ngayHenTra, getdate()) *400 as N'Tiền phạt',\n" +
                     "trangThai as N'Trạng thái'\n" +
-                    "from phieuMuon\n" +
-                    "where datediff(day, hanTra, getdate()) > 0;";
+                    "from MuonTra\n" +
+                    "where datediff(day, ngayHenTra, getdate()) > 0" +
+                    " and trangThai!=N'Đã trả';";
             SqlDataAdapter daQLQH = new SqlDataAdapter(sql, conn);
             DataTable dtQLQH = new DataTable();
             daQLQH.Fill(dtQLQH);
             dgvQuanLyQuaHan.DataSource = dtQLQH;
             dgvQuanLyQuaHan.Columns["Trạng thái"].Visible = false;
+            dgvQuanLyQuaHan.Columns["Ngày trả thực tế"].Visible = false;
+            dgvQuanLyQuaHan.Columns["Mã sách"].Visible = false;
+            dgvQuanLyQuaHan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void ucQuanLyQuaHan_Load(object sender, EventArgs e)
         {
@@ -67,52 +71,58 @@ namespace WindowsFormsQLQH
             else
             {
                 sql = "Select\n" +
-                    "row_number() over (order by hanTra desc) as STT," +
-                    "maPhieuMuon as N'Mã phiếu mượn',\n" +
-                    "maDocGia as N'Mã độc giả',\n" +
-                    "tenDocGia as N'Tên độc giả',\n" +
+                    "maPhieu as N'Mã phiếu',\n" +
+                    "maNguoiDung as N'Mã độc giả',\n" +
+                    "tenNguoiDung as N'Tên độc giả',\n" +
                     "maSach as N'Mã sách',\n" +
                     "tenSach as N'Tên sách',\n" +
                     "ngayMuon as N'Ngày mượn',\n" +
-                    "hanTra as N'Hạn trả',\n" +
-                    "datediff(day, hanTra, getdate()) as N'Số ngày quá hạn',\n" +
-                    "datediff(day, hanTra, getdate()) * 400 as N'Tiền phạt',\n" +
+                    "ngayHenTra as N'Hạn trả',\n" +
+                    "ngayTraThucTe as N'Ngày trả thực tế',\n" +
+                    "datediff(day, ngayHenTra, getdate()) as N'Số ngày quá hạn',\n" +
+                    "datediff(day, ngayHenTra, getdate()) *400 as N'Tiền phạt',\n" +
                     "trangThai as N'Trạng thái'\n" +
-                    "from phieuMuon\n" +
-                    "where (maDocGia like N'%" + tbTimKiem.Text + "%' or " +
+                    "from MuonTra\n" +
+                    "where (maNguoiDung like N'%" + tbTimKiem.Text + "%' or " +
                     "maSach like N'%" + tbTimKiem.Text + "%' or " +
-                    "tenDocGia like N'%" + tbTimKiem.Text + "%') " +
-                    "and datediff(day, hanTra, getdate()) > 0;"; 
+                    "tenNguoiDung like N'%" + tbTimKiem.Text + "%') " +
+                    "and datediff(day, ngayHenTra, getdate()) > 0" +
+                    " and trangThai!=N'Đã trả';"; 
             SqlDataAdapter daQLQH = new SqlDataAdapter(sql, conn);
             DataTable dtQLQH=new DataTable();  
             daQLQH.Fill(dtQLQH);
             dgvQuanLyQuaHan.DataSource= dtQLQH;
             dgvQuanLyQuaHan.Columns["Trạng thái"].Visible = false;
+            dgvQuanLyQuaHan.Columns["Ngày trả thực tế"].Visible = false;
+            dgvQuanLyQuaHan.Columns["Mã sách"].Visible = false;
+            dgvQuanLyQuaHan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
                 
         }
 
         private void timTheoSoNgayQuaHan_ValueChanged(object sender, EventArgs e)
         {
-            string sql = "select " +
-                "row_number() over (order by hanTra desc) as STT," +
-                "maPhieuMuon as N'Mã phiếu mượn',\n" +
-                "maDocGia as N'Mã độc giả',\n" +
-                "tenDocGia as N'Tên độc giả',\n" +
+            string sql = "Select\n" +
+                "maPhieu as N'Mã phiếu',\n" +
+                "maNguoiDung as N'Mã độc giả',\n" +
+                "tenNguoiDung as N'Tên độc giả',\n" +
                 "maSach as N'Mã sách',\n" +
                 "tenSach as N'Tên sách',\n" +
                 "ngayMuon as N'Ngày mượn',\n" +
-                "hanTra as N'Hạn trả',\n" +
-                "datediff(day,hanTra,getdate()) as N'Số ngày quá hạn',\n" +
-                "datediff(day,hanTra,getdate()) * 400 as N'Tiền phạt',\n" +
+                "ngayHenTra as N'Hạn trả',\n" +
+                "ngayTraThucTe as N'Ngày trả thực tế',\n" +
+                "datediff(day, ngayHenTra, getdate()) as N'Số ngày quá hạn',\n" +
+                "datediff(day, ngayHenTra, getdate()) *400 as N'Tiền phạt',\n" +
                 "trangThai as N'Trạng thái'\n" +
-                "from phieuMuon\n" +
-                "where datediff(day,hanTra,getdate()) = " + nudSoNgayQuaHan.Value + ";";
+                "from MuonTra\n" +
+                "where datediff(day,ngayHenTra,getdate()) = " + nudSoNgayQuaHan.Value + 
+                " and trangThai!=N'Đã trả';";
             SqlDataAdapter daQLQH = new SqlDataAdapter(sql, conn);
             DataTable dtQLQH = new DataTable();
             daQLQH.Fill(dtQLQH);
             dgvQuanLyQuaHan.DataSource = dtQLQH;
             dgvQuanLyQuaHan.Columns["Trạng thái"].Visible = false;
+            dgvQuanLyQuaHan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void tbTimKiem_Enter(object sender, EventArgs e)
@@ -135,17 +145,21 @@ namespace WindowsFormsQLQH
 
         private void btXacNhanTraSach_Click(object sender, EventArgs e)
         {
-            string maPhieuMuon = dgvQuanLyQuaHan.CurrentRow.Cells["Mã phiếu mượn"].Value.ToString();
+            string maPhieuMuon = dgvQuanLyQuaHan.CurrentRow.Cells["Mã phiếu"].Value.ToString();
+            string maSach = dgvQuanLyQuaHan.CurrentRow.Cells["Mã sách"].Value.ToString();
             DialogResult dialogResult = MessageBox.Show("Phiếu mượn "+maPhieuMuon+"\nĐã thu tiền phạt ?",
                                         "Xác nhận",
                                         MessageBoxButtons.YesNoCancel,
                                         MessageBoxIcon.Question);
             if (dialogResult==DialogResult.Yes)
             {
+                dgvQuanLyQuaHan.Rows.RemoveAt(dgvQuanLyQuaHan.CurrentRow.Index);
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "delete from phieuMuon where maPhieuMuon = '" +
-                    maPhieuMuon + "';";
+                cmd.CommandText = "upDate MuonTra set trangThai = N'Đã trả'," +
+                    " ngayTraThucTe = getdate() where maPhieu = '" +
+                    maPhieuMuon + "';\n" +
+                    "upDate Sach set soLuong+=1 where maSach = '" +maSach + "';"; // cap nhat sl sach sau khi tra
                 cmd.ExecuteNonQuery();
                 LoadData();
             }
@@ -156,16 +170,16 @@ namespace WindowsFormsQLQH
             string tienPhat = Convert.ToString(Convert.ToInt32(dgvQuanLyQuaHan.CurrentRow.Cells["Số ngày quá hạn"].Value.ToString()) * 400);
             string tenDocGia = dgvQuanLyQuaHan.CurrentRow.Cells["Tên độc giả"].Value.ToString();
             string maDocGia = dgvQuanLyQuaHan.CurrentRow.Cells["Mã độc giả"].Value.ToString();
-            string maPhieuMuon = dgvQuanLyQuaHan.CurrentRow.Cells["Mã phiếu mượn"].Value.ToString();
+            string maPhieuMuon = dgvQuanLyQuaHan.CurrentRow.Cells["Mã phiếu"].Value.ToString();
             MessageBox.Show("Đã thu " + tienPhat
                 + " của độc giả " + tenDocGia +
                 " có mã độc giả " + maDocGia, "Thông báo", MessageBoxButtons.OKCancel);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "update docGia set tienNo = tienNo + " +
+            cmd.CommandText = "update TaiKhoan set tienNo = tienNo + " +
                 Convert.ToInt32(dgvQuanLyQuaHan.CurrentRow.Cells["Số ngày quá hạn"].Value.ToString()) * 400 +
-                " where maDocGia = '" + maDocGia+ "';\n" +
-                "upDate phieuMuon set trangThai = N'Đã thu phạt' where maPhieuMuon = '"+
+                " where maNguoiDung = '" + maDocGia+ "';\n" +
+                "upDate MuonTra set trangThai = N'Đã thu phạt' where maPhieu = '"+
                 maPhieuMuon +"';";
             cmd.ExecuteNonQuery();
             LoadData();
@@ -205,6 +219,7 @@ namespace WindowsFormsQLQH
                     //ghi tieu de collumn
                     for (int i = 0; i < dgvQuanLyQuaHan.Columns.Count; i++)
                     {
+                        if (dgvQuanLyQuaHan.Columns[i].HeaderText == "Ngày trả thực tế") continue;
                         sw.Write(dgvQuanLyQuaHan.Columns[i].HeaderText);
                         if (i < dgvQuanLyQuaHan.Columns.Count - 1)
                         {
@@ -219,6 +234,7 @@ namespace WindowsFormsQLQH
                         {
                             for (int i = 0; i < dgvQuanLyQuaHan.Columns.Count; i++)
                             {
+                                if (dgvQuanLyQuaHan.Columns[i].HeaderText == "Ngày trả thực tế") continue;
                                 sw.Write(row.Cells[i].Value);
                                 if (i < dgvQuanLyQuaHan.Columns.Count - 1)
                                 {
