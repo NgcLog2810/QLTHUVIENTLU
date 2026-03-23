@@ -21,5 +21,30 @@ namespace QUANLYTHUVIENTLU
         {
 
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnQLKhoSach_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+
+            UC_QuanLyKhoSach uc = new UC_QuanLyKhoSach();
+            uc.Dock = DockStyle.Fill;
+
+            panelMain.Controls.Add(uc);
+        }
+
+        private void btnTKBCTTSach_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+
+            UC_ThongKeBaoCaoSach uc = new UC_ThongKeBaoCaoSach();
+            uc.Dock = DockStyle.Fill;
+
+            panelMain.Controls.Add(uc);
+        }
     }
 }
